@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.example.com/css?family=Didot+LT+Std:400,700">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          height: 1500px; /* Just for demonstration purpose to create a scrollbar */
+      }
+
+      .navbar {
+          padding: 10px 0;
+          text-align: center;
+      }
+  </style>
+
+</head>
+<body>
+    <div class="navbar"></div>
+    <div class="container" id="section-1">
+       <div class="section-1 mt-5">
+        <div class="heading">
+            <h1 class="text-center">My account</h1>
+          </div>
+          <div class="row">
+             <div class="col-md-3">
+                <div class="list mt-5">
+                    <div class="scrolling-list">
+                      <ul>
+                        <li class="mb-3">My Info</li>
+                        <li class="mb-3">My Addresses</li>
+                        <li class="mb-3">My Orders</li>
+                        <li class="mb-3 my-favorites">My Favorites</li>
+                        <li class="mb-3">Logout</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+             </div>
+             <div class="col-md-9">
+                <div class="text-content">
+                    <div class="sub-heading mt-3">
+                        <h6>My FAVORITES</h6>
+                        <hr class="custom-line">
+                       </div>
+         
+                       <div class="new-list mt-3">
+                           <p class="font-italic mb-2">create new lists</p>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                       </div>
+                       <div class="new-user-btn">
+                        <button type="button" class="button py-1 mt-3" id="section1Button" style="letter-spacing: 1.2px;">CREATE YOUR FIRST LIST</button>
+                    </div>
+                </div>
+             
+             </div>
+          </div>
+       </div>
+    </div>
+
+    <!-- list page 1------------------------------------------------------------------------------------------ -->
+
+    <!-- <div class="navbar"></div> -->
+    <div class="container" id="listpage-section">
+       <div class="section-1 mt-5  ">
+        <div class="heading">
+            <h1 class="text-center">My account</h1>
+          </div>
+          <div class="row">
+             <div class="col-md-3">
+                <div class="list mt-5">
+                    <div class="scrolling-list">
+                      <ul>
+                        <li class="mb-3">My Info</li>
+                        <li class="mb-3">My Addresses</li>
+                        <li class="mb-3">My Orders</li>
+                        <li class="mb-3 my-favorites">My Favorites</li>
+                        <li class="mb-3">Logout</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+             </div>
+             <div class="col-md-9">
+                <div class="text-content">
+                    <div class="sub-heading mt-3">
+                        <h6>My FAVORITES</h6>
+                        <hr class="custom-line">
+                       </div>
+                       <div class="back-to-list d-flex">
+                        <i class="fa fa-arrow-left mt-2 mr-2" aria-hidden="true"></i>
+                        <p class="mt-1">back to lists</p>
+                       </div>
+                       <div class="form-group">
+                        <label for="inputField" class="font-italic list-name ">List Name</label>
+                        <input type="text" class="form-control" style="width: 83%;" id="inputField" name="inputField">
+                        <hr class="custom-line mb-2" style="width: 83%;">
+                      </div>
+                      <div class="information-section">
+                        <h6 class="font-italic info1">Information</h6>
+                        <div class="row">
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField1">Bill To:</label>
+                                <input type="text" class="form-control" id="inputField1" name="inputField1">
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField2">Ship To:</label>
+                                <input type="text" class="form-control" id="inputField2" name="inputField2">
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField3">Additional Notes:</label>
+                                <input type="text" class="form-control" id="inputField3" name="inputField3">
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField4">Shipping Charges:</label>
+                                <input type="text" class="form-control" id="inputField4" name="inputField4">
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                   
+         
+                       
+                       <div class="listpage-btn">
+                        <button type="button" class="button py-2 mt-3"  id="createListButton" style="letter-spacing: 1.2px; width: 20%;">CREATE LIST</button>
+                    </div>
+                </div>
+             
+             </div>
+          </div>
+       </div>
+    </div>
+
+    <!-- list page 2 ------------------------------------------------------------------------------------------------ -->
+
+    <!-- <div class="navbar"></div> -->
+    <div class="container" id="listpage2" >
+       <div class="section-1 mt-5">
+        <div class="heading">
+            <h1 class="text-center">My account</h1>
+          </div>
+          <div class="row">
+             <div class="col-md-3">
+                <div class="list mt-5">
+                    <div class="scrolling-list">
+                      <ul>
+                        <li class="mb-3">My Info</li>
+                        <li class="mb-3">My Addresses</li>
+                        <li class="mb-3">My Orders</li>
+                        <li class="mb-3 my-favorites">My Favorites</li>
+                        <li class="mb-3">Logout</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+             </div>
+             <div class="col-md-9">
+                <div class="text-content">
+                    <div class="sub-heading mt-3">
+                        <h6>My FAVORITES</h6>
+                        <hr class="custom-line">
+                       </div>
+                       <div class="back-to-list d-flex">
+                        <i class="fa fa-arrow-left mt-2 mr-2" aria-hidden="true"></i>
+                        <p class="mt-1">back to lists</p>
+                       </div>
+                       <div class="list2-form">                     
+                       <div class="form-group">
+                        <label for="inputField" class="font-italic list-name"> New List Name</label>
+                        <input type="text" value="0 items" class="form-control non-clickable" style="width: 83%;" id="inputField" name="inputField">
+                        <hr class="custom-line mb-5" style="width: 83%;">
+                      </div>
+                      <div class="information-section">
+                        <div class="inline-text d-flex justify-content-between">
+                            <h6 class="font-italic info">Information</h6>
+                            <a href="edit-info.html" id="editLink">EDIT</a> 
+                           </div>
+                        <div class="row">
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField1">Bill To:</label>
+                                <input type="text" value="Saad" class="form-control non-clickable" id="inputField1" name="inputField1">
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField2">Ship To:</label>
+                                <input type="text" value="Address" class="form-control non-clickable" id="inputField2" name="inputField2">
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField3">Additional Notes:</label>
+                                <input type="text" placeholder="Any additional notes here" class="form-control non-clickable" id="inputField3" name="inputField3">
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField4">Shipping Charges:</label>
+                                <input type="text" value="$155.00" class="form-control non-clickable" id="inputField4" name="inputField4">
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <hr class="custom-line mb-5" style="width: 83%;">
+                    <div class="category-title">
+                        <h6 class="font-italic list-c">List Categories</h6>
+                    </div>
+                    <div class="add-categories d-flex mb-5"id="addCategoryButton">
+                        <h6 class="text-underline mt-3 ">ADD CATEGORY 
+                        </h6>
+                       <span><i class="fa fa-plus mt-3" aria-hidden="true"></i></span>
+                    </div>
+                    <hr class="custom-line mb-5" style="width: 83%;">
+
+                </div>
+             
+             </div>
+          </div>
+       </div>
+    </div>
+
+    <!-- previous users----------------------------------------------------------------------------------- -->
+
+
+    <!-- <div class="navbar"></div> -->
+    <div class="container" id="previous-user-section">
+       <div class="section-1 mt-3">
+        <div class="heading">
+            <h1 class="text-center mt-5">My account</h1>
+          </div>
+          <div class="row">
+             <div class="col-md-3">
+                <div class="list mt-5">
+                    <div class="scrolling-list">
+                      <ul>
+                        <li class="mb-3">My Info</li>
+                        <li class="mb-3">My Addresses</li>
+                        <li class="mb-3">My Orders</li>
+                        <li class="mb-3 my-favorites" >My Favorites</li>
+                        <li class="mb-3">Logout</li>
+                      </ul>
+                    </div>
+                  </div>
+             </div>
+             <div class="col-md-9">
+                <div class="text-content">
+                    <div class="sub-heading d-flex justify-content-between mt-3">
+                        <h6>My FAVORITES</h6>
+                        <p class="custom-underline cursor-pointer" id="new-list">create a new list</p>        
+                       </div>
+                       <hr class="custom-line">
+                      <div class="row">
+                        <div class="col-md-6">
+                            <div class="box-1 mt-4">
+                                <h6 class="text-center font-italic pt-3">Name</h6>
+                                <div class="d-flex justify-content-around mt-5">
+                                    <div class="small-boxes mb-4"></div>
+                                    <div class="small-boxes "></div>
+                                </div>
+                                <div class="d-flex justify-content-around">
+                                    <div class="small-boxes mb-4"></div>
+                                    <div class="small-boxes "></div>
+                                </div>
+                                <p class="custom-underline text-center mt-4" id="view-list">VIEW LIST</p> 
+                            </div>
+                           </div>
+                           <div class="col-md-6">
+                            <div class="box-2 mt-4">
+                                <h6 class="text-center pt-3 font-italic">Name</h6>
+                                <div class="d-flex justify-content-around mt-5">
+                                    <div class="small-boxes mb-4"></div>
+                                    <div class="small-boxes "></div>
+                                </div>
+                                <div class="d-flex justify-content-around">
+                                    <div class="small-boxes mb-4"></div>
+                                    <div class="small-boxes "></div>
+                                </div>
+                                <p class="custom-underline text-center mt-4">VIEW LIST</p> 
+                            </div>
+                           </div>
+                           <div class="col-md-6 mt-4 mb-5">
+                            <div class="box-3">
+                                <h6 class="text-center pt-3 font-italic">Name</h6>
+                                <div class="d-flex justify-content-around mt-5">
+                                    <div class="small-boxes mb-4"></div>
+                                    <div class="small-boxes "></div>
+                                </div>
+                                <div class="d-flex justify-content-around">
+                                    <div class="small-boxes mb-4"></div>
+                                    <div class="small-boxes "></div>
+                                </div>
+                                <p class="custom-underline text-center mt-4">VIEW LIST</p> 
+
+                            </div>
+                           </div>
+                      </div>
+
+                    </div>
+                </div>
+             
+             </div>
+          </div>
+       </div>
+    </div>
+
+    <!-- Edit Information----------------------------------------------------------------------------- -->
+
+
+    <!-- <div class="navbar"></div> -->
+    <div class="container">
+       <div class="section-1 mt-5 d-none">
+        <div class="heading">
+            <h1 class="text-center">My account</h1>
+          </div>
+          <div class="row">
+             <div class="col-md-3">
+                <div class="list mt-5">
+                    <div class="scrolling-list">
+                      <ul>
+                        <li class="mb-3">My Info</li>
+                        <li class="mb-3">My Addresses</li>
+                        <li class="mb-3">My Orders</li>
+                        <li class="mb-3 my-favorites">My Favorites</li>
+                        <li class="mb-3">Logout</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+             </div>
+             <div class="col-md-9">
+                <div class="text-content">
+                    <div class="sub-heading mt-3">
+                        <h6>My FAVORITES</h6>
+                        <hr class="custom-line">
+                       </div>
+                       <div class="back-to-list d-flex">
+                        <i class="fa fa-arrow-left mt-2 mr-2" aria-hidden="true"></i>
+                        <p class="mt-1">back to lists</p>
+                       </div>
+                                      
+                       <div class="form-group">
+                        <label for="inputField" class="font-italic list-name "> New List Name</label>
+                        <input type="text" value="0 items" class="form-control" style="width: 83%;" id="inputField" name="inputField">
+                        <hr class="custom-line mb-5" style="width: 83%;">
+                      </div>
+                      <div class="information-section">
+                        <div class="inline-text d-flex justify-content-between">
+                            <h6 class="font-italic">Information</h6>
+                            <h6 class="edit-text">EDIT</h6>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField1">Bill To:</label>
+                                <input type="text" value="Saad" class="form-control" id="inputField1" name="inputField1">
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField2">Ship To:</label>
+                                <input type="text" value="Address" class="form-control " id="inputField2" name="inputField2">
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField3">Additional Notes:</label>
+                                <input type="text" placeholder="Any additional notes here" class="form-control" id="inputField3" name="inputField3">
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField4">Shipping Charges:</label>
+                                <input type="text" value="$155.00" class="form-control" id="inputField4" name="inputField4">
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                   
+                      <hr class="custom-line" style="width: 83%;">
+                    <div class="category-title">
+                        <h6 class="font-italic">List Categories</h6>
+                    </div>
+                    <div class="add-categories d-flex mb-5">
+                        <h6 class="text-underline mt-3">ADD CATEGORY
+                        </h6>
+                       <span><i class="fa fa-plus mt-3" aria-hidden="true"></i></span>
+                    </div>
+                    <hr class="custom-line mb-5" style="width: 83%;">
+
+                </div>
+             
+             </div>
+          </div>
+       </div>
+    </div>
+
+    <!-- Add categories 1 ------------------------------------------------------------------------------------ -->
+
+    <!-- <div class="navbar"></div> -->
+    <div class="container">
+       <div class="section-1 mt-5 d-none">
+        <div class="heading">
+            <h1 class="text-center">My account</h1>
+          </div>
+          <div class="row">
+             <div class="col-md-3">
+                <div class="list mt-5">
+                    <div class="scrolling-list">
+                      <ul>
+                        <li class="mb-3">My Info</li>
+                        <li class="mb-3">My Addresses</li>
+                        <li class="mb-3">My Orders</li>
+                        <li class="mb-3 my-favorites">My Favorites</li>
+                        <li class="mb-3">Logout</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+             </div>
+             <div class="col-md-9">
+                <div class="text-content">
+                    <div class="sub-heading mt-3">
+                        <h6>My FAVORITES</h6>
+                        <hr class="custom-line mb-5" style="width: 83%;">
+                       </div>
+                       <div class="back-to-list d-flex">
+                        <i class="fa fa-arrow-left mt-2 mr-2" aria-hidden="true"></i>
+                        <p class="mt-1">back to lists</p>
+                       </div>
+                                      
+                       <div class="form-group">
+                        <label for="inputField" class="font-italic list-name "> New List Name</label>
+                        <input type="text" value="0 items" class="form-control new-list" style="width: 83%; border: none; outline: none; box-shadow: none; margin-left: -10px;" id="inputField" name="inputField">
+                        <hr class="custom-line mb-5" style="width: 83%;">
+                      </div>
+                      <div class="information-section">
+                        <div class="inline-text d-flex justify-content-between">
+                            <h6 class="font-italic">Information</h6>
+                            <h6 class="edit-text">EDIT</h6>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField1">Bill To:</label>
+                                <input type="text" value="Saad" class="form-control" id="inputField1" name="inputField1">
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField2">Ship To:</label>
+                                <input type="text"  class="form-control " id="inputField2" name="inputField2">
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField3">Additional Notes:</label>
+                                <input type="text"  class="form-control" id="inputField3" name="inputField3">
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField4">Shipping Charges:</label>
+                                <input type="text" class="form-control" id="inputField4" name="inputField4">
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                   
+                    <hr class="custom-line">
+                    <div class="category-title">
+                        <h6 class="font-italic">List Categories</h6>
+                    </div>
+
+                    <div class="category-input-container mt-3" id="category-input-container">
+                      <!-- Category input fields will be added here -->
+                     </div>
+                    <div class="add-categories mb-5">
+                        <h6 class="text-underline mt-3" id="add-category-button">ADD CATEGORY
+                        </h6>
+                       <span><i class="fa fa-plus mt-3" aria-hidden="true"></i></span>
+                       
+                    </div>
+                    <hr class="custom-line mb-5" style="width: 83%;">
+
+                </div>
+             
+             </div>
+          </div>
+       </div>
+    </div>
+
+    <!-- add categories 2------------------------------------------------------------------------------------------------------ -->
+
+
+    <!-- <div class="navbar"></div> -->
+    <div class="container">
+       <div class="section-1 mt-5 d-none">
+        <div class="heading">
+            <h1 class="text-center">My account</h1>
+          </div>
+          <div class="row">
+             <div class="col-md-3">
+                <div class="list mt-5">
+                    <div class="scrolling-list">
+                      <ul>
+                        <li class="mb-3">My Info</li>
+                        <li class="mb-3">My Addresses</li>
+                        <li class="mb-3">My Orders</li>
+                        <li class="mb-3 my-favorites">My Favorites</li>
+                        <li class="mb-3">Logout</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+             </div>
+             <div class="col-md-9">
+                <div class="text-content">
+                    <div class="sub-heading mt-3">
+                        <h6>My FAVORITES</h6>
+                        <hr class="custom-line">
+                       </div>
+                       <div class="back-to-list d-flex">
+                        <i class="fa fa-arrow-left mt-2 mr-2" aria-hidden="true"></i>
+                        <p class="mt-1">back to lists</p>
+                       </div>
+                       <div class="list2-form">                     
+                       <div class="form-group">
+                        <label for="inputField" class="font-italic list-name "> New List Name</label>
+                        <input type="text" value="0 items" class="form-control non-clickable" style="width: 83%;" id="inputField" name="inputField">
+                        <hr class="custom-line" style="width: 83%;">
+                      </div>
+                      <div class="information-section">
+                        <div class="inline-text d-flex justify-content-between">
+                            <h6 class="font-italic">Information</h6>
+                            <a href="edit-info.html" id="editLink">EDIT</a> 
+                           </div>
+                        <div class="row">
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField1">Bill To:</label>
+                                <input type="text" value="Saad" class="form-control non-clickable" id="inputField1" name="inputField1">
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField2">Ship To:</label>
+                                <input type="text" value="Address" class="form-control non-clickable" id="inputField2" name="inputField2">
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField3">Additional Notes:</label>
+                                <input type="text" placeholder="Any additional notes here" class="form-control non-clickable" id="inputField3" name="inputField3">
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField4">Shipping Charges:</label>
+                                <input type="text" value="$155.00" class="form-control non-clickable" id="inputField4" name="inputField4">
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <hr class="custom-line" style="width: 83%;">
+                    <div class="category-title">
+                        <label class="font-italic" for="inputField5">List Categories</label>
+                        <input type="text" placeholder="Ex:Bedroom" class="form-control" id="inputField5" name="inputField5" style="width: 83%;">
+
+                    </div>
+                    <div class="add-categories d-flex mb-5">
+                        <h6 class="text-underline mt-4">ADD CATEGORY
+                        </h6>
+                       <span><i class="fa fa-plus mt-4" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="category-input-container mt-3">
+                        <!-- Category input fields will be added here -->
+                    </div>
+                    <hr class="custom-line mb-5" style="width: 83%;">
+
+                </div>
+                <div class="save-btn">
+                    <button type="button" class="button py-2 mt-3" style="letter-spacing: 1.2px; width: 20%;">SAVE</button>
+                </div>
+             
+             </div>
+          </div>
+       </div>
+    </div>
+
+
+    <!-- add categories 3 -->
+
+
+    <!-- <div class="navbar"></div> -->
+    <div class="container">
+       <div class="section-1 mt-5 d-none">
+        <div class="heading">
+            <h1 class="text-center">My account</h1>
+          </div>
+          <div class="row">
+             <div class="col-md-3">
+                <div class="list mt-5">
+                    <div class="scrolling-list">
+                      <ul>
+                        <li class="mb-3">My Info</li>
+                        <li class="mb-3">My Addresses</li>
+                        <li class="mb-3">My Orders</li>
+                        <li class="mb-3 my-favorites">My Favorites</li>
+                        <li class="mb-3">Logout</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+             </div>
+             <div class="col-md-9">
+                <div class="text-content">
+                    <div class="sub-heading mt-3">
+                        <h6>My FAVORITES</h6>
+                        <hr class="custom-line">
+                       </div>
+                       <div class="back-to-list d-flex">
+                        <i class="fa fa-arrow-left mt-2 mr-2" aria-hidden="true"></i>
+                        <p class="mt-1">back to lists</p>
+                       </div>
+                       <div class="list2-form">                     
+                       <div class="form-group">
+                        <label for="inputField" class="font-italic list-name "> New List</label>
+                        <input type="text" value="0 items" class="form-control non-clickable" style="width: 83%;" id="inputField" name="inputField">
+                        <hr class="custom-line" style="width: 83%;">
+                      </div>
+                      <div class="information-section">
+                        <div class="inline-text d-flex justify-content-between">
+                            <h6 class="font-italic">Information</h6>
+                            <a href="edit-info.html" id="editLink">EDIT</a> 
+                           </div>
+                        <div class="row">
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField1">Bill To:</label>
+                                <input type="text" value="Saad" class="form-control non-clickable" id="inputField1" name="inputField1">
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField2">Ship To:</label>
+                                <input type="text" value="Address" class="form-control non-clickable" id="inputField2" name="inputField2">
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField3">Additional Notes:</label>
+                                <input type="text" placeholder="Any additional notes here" class="form-control non-clickable" id="inputField3" name="inputField3">
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="inputField4">Shipping Charges:</label>
+                                <input type="text" value="$155.00" class="form-control non-clickable" id="inputField4" name="inputField4">
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <hr class="custom-line" style="width: 83%;">
+                    <div class="category-title">
+                        <label class="font-italic" for="inputField5">List Categories</label>
+                    </div>
+                    <div class="add-categories d-flex mb-4">
+                        <h6 class="text-underline mt-4">ADD CATEGORY
+                        </h6>
+                       <span><i class="fa fa-plus mt-4" aria-hidden="true"></i></span>
+                    </div>
+
+                    <div class="category-input-container mt-3">
+                        <!-- Category input fields will be added here -->
+                    </div>
+                    <hr class="custom-line mb-5" style="width: 83%;">
+                    <div class="rename-inline d-flex justify-content-end">
+                        <h6 class="text-underline">rename</h6>
+                        <h6 class="ml-2 text-underline">delete</h6>
+                    </div>
+                        <input type="text" value="BEDROOM" class="form-control mb-5 non-clickable" id="inputField6" name="inputField6">
+
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+    <script src="script.js"></script>
+ 
+</body>
+</html>
